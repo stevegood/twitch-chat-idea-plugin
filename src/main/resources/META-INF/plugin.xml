@@ -1,0 +1,32 @@
+<idea-plugin version="2">
+    <id>rocks.stevegood.idea.slack</id>
+    <name>Twitch Chat</name>
+    <version>1.0.0</version>
+    <vendor email="sgood@lanctr.com" url="http://stevegood.rocks">Steve Good</vendor>
+
+    <description><![CDATA[
+        <h1>Twitch Chat</h1>
+        <p>A simple chat client for Twitch.</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+       Release 1.0.0: Initial release<br/>
+    ]]></change-notes>
+
+    <idea-version since-build="2016.2"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Twitch" secondary="true" anchor="right" icon="/twitch/twitch.png"
+                    factoryClass="rocks.stevegood.idea.twitch.TwitchChatToolWindowFactory"/>
+    </extensions>
+
+    <application-components>
+    </application-components>
+
+    <project-components>
+    </project-components>
+
+    <actions>
+    </actions>
+
+</idea-plugin>
