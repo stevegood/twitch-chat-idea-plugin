@@ -15,7 +15,6 @@ class TwitchChatToolWindowFactory implements ToolWindowFactory {
     private ToolWindow twitchTW
     private TwitchChatToolWindow chatWindow
     private List messages
-    private def bot
 
     TwitchChatToolWindowFactory() {
         messages = []
@@ -25,9 +24,6 @@ class TwitchChatToolWindowFactory implements ToolWindowFactory {
         }
 
         chatWindow.sendChatButton.addActionListener sendChatAction
-
-        bot = new TwitchBot('ExtremeModeration', 'oauth:wb6kzrwpb5erg067hdtquffnv5uqpo')
-        bot.startBot()
     }
 
     @Override
